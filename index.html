@@ -10,45 +10,52 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
 </head>
+<header class="contact-detail container-fluid">
+    <div class="contact" style="display:flex;">
+    <div class="phone">
+        <i class="fa fa-phone-square" aria-hidden="true"></i>
+        <a href="" style="color: black;">02-5452000</a>
+    </div>
+    <div class="email">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <a href="" style="color: black;">info@school.com.np</a>
+    </div>
+    </div>
+    </header>
 <body>
 <!--heading-->
-	<header class="contact-detail container-fluid">
-	<div class="contact">
- 		<i class="fa fa-phone-square" aria-hidden="true"></i>
-		<a href="" style="color: black;">02-5452000</a>
-		<i class="fa fa-envelope" aria-hidden="true"></i>
-		<a href="" style="color: black;">info@school.com.np</a>
-	</div>
-	</header>
-       <nav class="navbar navbar-expand-md bg-light navbar-white">
-            <div class="container">
-                <a href="" class="navbar-brand text-warning font-weight-bold">Sujan Chaudhary</a>
-                <div class="">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                        	<a href="#home" class="nav-link text-dark active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#portfolio" class="nav-link text-dark">Course</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a href="#about" class="nav-link text-dark">Event</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link text-dark">gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#blogs" class="nav-link text-dark">contact</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#services" class="nav-link text-dark">about</a>
-                        </li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<div class="container">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-                    </ul> 
-                </div>
-            </div>
-       </nav>
+  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto w-100 justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Course</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Event</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+	
 
        <!--Home section-->
     <section class="home" id="home">
@@ -65,7 +72,7 @@
             <span id="btn3"></span>
             <span id="btn4"></span> 
         </div>
-    <div class="buttonlearn">
+    <div class="buttonlearn col-md-7 col-sm-2">
     <a href="#" class="btn">learn More</a>
     </div>
 
@@ -107,7 +114,7 @@
     </script>
     </section>
 <!--Event and new section starts-->
-<section class="bg-light container-fluid" style="height:70vh;">
+<section class="bg-light container-fluid" style="height:80vh;">
  <h1 style="text-align: center; padding-top: 20px;">EVENT & NEWS</h1>
    <div class="news container">
     <div class="event">
@@ -190,7 +197,7 @@
 <!--courses-->
 <section class="container course">
 <div>
-    <div>
+    <div col-md-7 col-sm-12>
         <h1>COURSES</h1>
     </div>
     <div class="courseimg">
@@ -241,10 +248,11 @@
     <h1 style="text-align:center; padding-left:0px;">
         Testimonial
     </h1>
+<div class="mainbox1">
 <div class="mainbox" style="display:flex;" id="sliders">
     <div class="container test" id="slidetest">
         <div class="box container">
-            <div class="imgBox"  style="padding-left: 260px;">
+            <div class="imgBox" id="boxs">
                 <img src="./image/1.jpg"/>                
             </div>
             <div class="name">
@@ -260,8 +268,8 @@
             <p>Lorem ipsum dolor sit amet. Vel culpa alias aut eligendi id similique labore in praesentium quisquam. Eos voluptates delectus ut fugit enim eum alias natus eum reiciendis consequatur! Eos fugit quae non repellendus quia ut dolor ipsa ad voluptatum eius ut labore nobis.
             </p>
         </div>
-        <div class="box container" style="padding-left:420px">
-            <div class="imgBox"  style="padding-left: 250px;">
+        <div class="box container" id="next-box1">
+            <div class="imgBox" id="box1">
                 <img src="./image/1.jpg"/>                
             </div>
             <div class="name">
@@ -277,8 +285,8 @@
             <p>Lorem ipsum dolor sit amet. Vel culpa alias aut eligendi id similique labore in praesentium quisquam. Eos voluptates delectus ut fugit enim eum alias natus eum reiciendis consequatur! Eos fugit quae non repellendus quia ut dolor ipsa ad voluptatum eius ut labore nobis.
             </p>
         </div>
-        <div class="box container" style="padding-left:650px">
-            <div class="imgBox"  style="padding-left: 250px;">
+        <div class="box container" id="next-box2">
+            <div class="imgBox" id="box2">
                 <img src="./image/1.jpg"/>                
             </div>
             <div class="name">
@@ -294,8 +302,8 @@
             <p>Lorem ipsum dolor sit amet. Vel culpa alias aut eligendi id similique labore in praesentium quisquam. Eos voluptates delectus ut fugit enim eum alias natus eum reiciendis consequatur! Eos fugit quae non repellendus quia ut dolor ipsa ad voluptatum eius ut labore nobis.
             </p>
         </div>
-        <div class="box container" style="padding-left:1000px">
-            <div class="imgBox"  style="padding-left: 250px;">
+        <div class="box container" id="next-box3">
+            <div class="imgBox" id="box3">
                 <img src="./image/1.jpg"/>                
             </div>
             <div class="name">
@@ -340,14 +348,14 @@
             btn7.classlist.remove("active")
         }
         btn7.onclick = function(){
-            slides.style.transform ="translateX(-237%)"
+            slides.style.transform ="translateX(-228%)"
             btn7.classlist.add("active");
             btn5.classlist.remove("active")
             btn6.classlist.remove("active")
             btn8.classlist.remove("active")
         }
         btn8.onclick = function(){
-            slides.style.transform ="translateX(-365%)"
+            slides.style.transform ="translateX(-333%)"
             btn8.classlist.add("active");
             btn5.classlist.remove("active")
             btn6.classlist.remove("active")
@@ -355,13 +363,14 @@
         }
     </script>
 </div>
+</div>
 </section>
 
 
 <!--message section-->
 <section class="message bg-light">
     <h1>message</h1>
-    <div class="container" style="display:flex">
+    <div class="container heights" style="display:flex">
         <div class="msgimg">
             <img src="./image/1.jpg">
         </div>
@@ -376,11 +385,11 @@
     </div>
     <div class="last">
         <div class="container imgs">
-            <img src="./image/6.svg" style="padding-top: 10px;">
+            <img src="./image/6.svg" style="padding-top: 20px;">
         </div>
         <div class="container paras" style="display:flex;">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. </p>
-            <div class="paraimg">
+            <div class="imgss">
                 <img src="./image/1.jpg">
             </div>
         </div>
@@ -388,5 +397,9 @@
     
 </section>
    
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
