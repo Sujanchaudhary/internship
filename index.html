@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>School</title>
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+<script src="main.js"></script>
 </head>
 <header class="contact-detail container-fluid">
     <div class="contact" style="display:flex;">
@@ -55,22 +57,22 @@
   </div>
 </div>
 </nav>
-	
+    
 
        <!--Home section-->
     <section class="home" id="home">
      <div class="slider-box">
         <div id="slider" class="slides">
-            <img src="./image/1.jpg"/>
-            <img src="./image/2.jpg"/>
-            <img src="./image/1.jpg"/>
-            <img src="./image/2.jpg"/>            
+            <img src="./image/1.jpg" class="slideshow" id="slides1" />
+            <img src="./image/2.jpg" class="slideshow" id="slides2" />
+            <img src="./image/1.jpg" class="slideshow" id="slides3"/>
+            <img src="./image/2.jpg" class="slideshow" id="slides4" />          
         </div>
         <div class="indicator">
-            <span id="btn1" class="active"></span>
-            <span id="btn2"></span>
-            <span id="btn3"></span>
-            <span id="btn4"></span> 
+            <span for="radio1" id="btn1" class="active"></span>
+            <span for="radio2" id="btn2"></span>
+            <span for="radio3" id="btn3"></span>
+            <span for="radio4" id="btn4"></span> 
         </div>
     <div class="buttonlearn col-md-7 col-sm-2">
     <a href="#" class="btn">learn More</a>
@@ -82,6 +84,7 @@
         var btn2 = document.getElementById("btn2")
         var btn3 = document.getElementById("btn3")
         var btn4 = document.getElementById("btn4")
+        var auto = document.getElementById("slideshow")
 
         btn1.onclick = function(){
             slide.style.transform ="translateX(0px)"
@@ -111,57 +114,57 @@
             btn2.classlist.remove("active")
             btn3.classlist.remove("active")
         }
-    </script>
-    </section>
+        function first() {
+            document.getElementById("slides1").src="./image/2.jpg";
+        }
+         function second() {
+            document.getElementById("slides1").src="./image/1.jpg";
+        }
+         function third() {
+            document.getElementById("slides1").src="./image/2.jpg";
+        }
+        setInterval(first,2000);
+        setInterval(second,3000);
+        setInterval(third,4000);        
+
+</script>
+</section>
 <!--Event and new section starts-->
-<section class="bg-light container-fluid" style="height:80vh;">
- <h1 style="text-align: center; padding-top: 20px;">EVENT & NEWS</h1>
-   <div class="news container">
-    <div class="event">
-        <div class="event-list">
-            <ul>
-                <li>
-                    <div class="time">
-                        <h2>30</h2>
-                        <h3>DEC 2020</h3>
-                    </div>
-                    <div class="details">
-                        <p>lorem ipsum</p>
-                        <a href="">Event Details</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="event-list bg-light">
-            <ul>
-                <li>
-                    <div class="time">
-                        <h2>31</h2>
-                        <h3>DEC 2020</h3>
-                    </div>
-                    <div class="details">
-                        <p>lorem ipsum</p>
-                        <a href="">Event Details</a>
-                    </div>
-                </li>
-            </ul>
-            
-        </div>
-        <div class="event-list">
-            <ul>
-                <li>
-                    <div class="time">
-                        <h2>32</h2>
-                        <h3>DEC 2020</h3>
-                    </div>
-                    <div class="details">
-                        <p>lorem ipsum</p>
-                        <a href="">Event Details</a>
-                    </div>
-                </li>
-            </ul>
+<section class="bg-light container-fluid news-event">
+  <h1>Event and News</h1>
+    <div class="container news" style="display:flex;">
+     <div class="event">
+        <div class="event-list" style="display: flex;">
+            <div class="date">
+                <h2>30</h2>
+                <h3>DEC 2020</h3>
+            </div>
+            <div class="details"> 
+                <p>lorem ipsum</p>
+                <a href="">Event Details</a>
             </div>
         </div>
+        <div class="event-list bg-light" style="display: flex;">
+            <div class="date">
+                <h2>30</h2>
+                <h3>DEC 2020</h3>
+            </div>
+            <div class="details"> 
+                <p>lorem ipsum</p>
+                <a href="">Event Details</a>
+            </div>
+        </div>
+        <div class="event-list" style="display: flex;">
+            <div class="date">
+                <h2>30</h2>
+                <h3>DEC 2020</h3>
+            </div>
+            <div class="details"> 
+                <p>lorem ipsum</p>
+                <a href="">Event Details</a>
+            </div>
+        </div>
+     </div>
 
         <!--image card-->
 <div class="image">
@@ -197,7 +200,7 @@
 <!--courses-->
 <section class="container course">
 <div>
-    <div col-md-7 col-sm-12>
+    <div>
         <h1>COURSES</h1>
     </div>
     <div class="courseimg">
