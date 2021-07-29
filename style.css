@@ -499,11 +499,11 @@ div.desc {
         position: absolute;
     }
     .news-event{
-    height:100vh;
+    height:125vh;
     }
     .event-list{
-        height: 90px;
-        width: 200px;
+        height: 120px;
+        width: 250px;
     }
     .event-list .details{
         display: flex;
@@ -517,7 +517,7 @@ div.desc {
         padding-top: 50px;
     }
     .news .image{
-        padding-left: 0px;
+        padding-left: 10px;
     }
      .course h1{
         margin-top: 10px;
@@ -577,17 +577,19 @@ div.desc {
     height: 130vh;
     }
      .mainbox1 #sliders{
-        width: 150%;
-        padding-left: 0px;
+        width: 100%;
+        padding-left: 150px;
+        right: 1%;
+
     }
 .test .box #boxs{
-    padding-left:40px;
+    padding-left:150px;
 }
 .test .box #box1{
-    padding-left:120px;
+    padding-left:150px;
 }
 .test .box #box2{
-   padding-left: 120px;
+   padding-left: 135px;
 }
 .test .box #box3{
     padding-left:120px;
@@ -596,10 +598,10 @@ div.desc {
     padding-left:305px;
 }
 .test #next-box2{
-    padding-left:470px;
+    padding-left:370px;
 }
 .test #next-box3{
-    padding-left:540px;
+    padding-left:470px;
 }
 .test .box .imgBox{
     top: 100px;
@@ -631,12 +633,12 @@ div.desc {
     font-size: 15px;
 }
     .box p{
-        width: 40%;
+        width: 550px;
     }
     .indicators{
     position: absolute;
     top: 26.3rem;
-    padding-left: 15rem;
+    padding-left: 8rem;
     transform: translateX(71%);
     }
     .qoutes1 img{
@@ -651,11 +653,8 @@ div.desc {
     }
 
 }
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-{
 
+@media only screen and (max-width: 750px){
     .navbar-collapse{
          background: linear-gradient(to bottom, #33ccff 5%, #ff99cc 100%);
 }
@@ -695,7 +694,7 @@ div.desc {
     padding-top: 10px;
 } 
 .event{
-    padding-top: 100px;
+    padding-top: 90px;
 } 
 .event-list{
     height: 6rem;
@@ -753,7 +752,7 @@ div.desc {
     }
     .courseimg img{
         position: relative;
-        left: 10%;
+        left: 15%
     }
     .box .imgBox{
         padding-left: 0px;
@@ -763,11 +762,11 @@ div.desc {
         padding-left: 120px;
     }
      .mainbox1 #sliders{
-        width: 150%;
+        width: 100%;
         padding-left: 0px;
     }
 .test .box #boxs{
-    padding-left:120px;
+    padding-left:150px;
 }
 .test .box #box1{
     padding-left:120px;
@@ -779,13 +778,13 @@ div.desc {
     padding-left:120px;
 }
 .test #next-box1{
-    padding-left:385px;
+    padding-left:175px;
 }
 .test #next-box2{
-    padding-left:470px;
+    padding-left:270px;
 }
 .test #next-box3{
-    padding-left:540px;
+    padding-left:350px;
 }
 .test .box .imgBox{
     top: 100px;
@@ -817,195 +816,12 @@ div.desc {
     font-size: 15px;
 }
     .box p{
-        width: 60%;
+        width: 500px;
     }
     .indicators{
     position: absolute;
     top: 26rem;
-    padding-left: 105px;
-    transform: translateX(65%);
-    }
-    .qoutes1 img{
-    height: 35px;
-    transform: rotate(0deg)translateX(-340px)translateY(0px);
-
-    }
-    .qoutes2 img{
-    height: 35px;
-    transform: rotate(0deg)translateX(0px)translateY(160px) ;
-
-    }
-}
-
-
-@media all and (max-width: 736px){
-    .navbar-collapse{
-         background: linear-gradient(to bottom, #33ccff 5%, #ff99cc 100%);
-}
-    .contact .phone a{
-        padding-left: 20px;
-    }
-    .contact .phone i{
-        padding-left: 70px;
-    }
-    .contact .email a{
-        padding-left: 20px;
-    }
-    .contact .email i{
-        padding-left: 70px;
-    }
-    .indicator
-    {
-        position: absolute;
-        left: 40%;
-        transform: translateX(50%);
-    }
-    .slider-box .buttonlearn{
-        left: 40%;
-        display: flex;
-        overflow: hidden;
-        bottom: 150px;
-        position: absolute;
-    }
-   .news-event .news{
-    padding-top: 40px;
-}
-.news-event{
-    height: 110vh;
-}
-.news-event h1{
-    text-align: center;
-    padding-top: 10px;
-} 
-.event{
-    padding-top: 100px;
-} 
-.event-list{
-    height: 6rem;
-    width: 170px;
-    border: 1px solid black;
-    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    background: #fff;
-}
-.event-list .date h2{
-    font-size: 40px;
-}
-.event-list .date h3{
-    font-size: 10px;
-}
-.event-list .details{
-    padding-left: 20px;
-    bottom: 20px;
-
-}
-.image{
-    float: right;
-}
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: right;
-  width: 170px;
-  height: 200px;
-  position: relative;
-
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 170px;
-  height: 150px;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}  
-.course h1{
-        margin-top: 10px;
-    }
-    .courseimg{
-        position: relative;
-        left: 0%;
-    }
-    .courseimg img{
-        position: relative;
-        left: 10%;
-    }
-    .box .imgBox{
-        padding-left: 0px;
-        left: 0;
-    }
-    .msgimg{
-        padding-left: 120px;
-    }
-     .mainbox1 #sliders{
-        width: 150%;
-        padding-left: 0px;
-    }
-.test .box #boxs{
-    padding-left:120px;
-}
-.test .box #box1{
-    padding-left:120px;
-}
-.test .box #box2{
-   padding-left: 120px;
-}
-.test .box #box3{
-    padding-left:120px;
-}
-.test #next-box1{
-    padding-left:385px;
-}
-.test #next-box2{
-    padding-left:470px;
-}
-.test #next-box3{
-    padding-left:540px;
-}
-.test .box .imgBox{
-    top: 100px;
-}    
-
-.test .box .imgBox img{
-        left: 0px;
-        height: 100px;
-        width: 100px;
-        transform: translatey(50px);
-}
-.test .box .name h1{
-    font-size: 15px;
-    padding-right: 115px;
-}
-.test .box .name h1:before{
-    content: '';
-    left: 0;
-    position: absolute;
-    height: 2px;
-    right: 70%;
-    background-color: #febd01;
-    bottom: 0px;
-}
-.test .box .name h3{
-    text-align: left;
-    margin: 20px;
-    padding-top: 70px;
-    font-size: 15px;
-}
-    .box p{
-        width: 60%;
-    }
-    .indicators{
-    position: absolute;
-    top: 26rem;
-    padding-left: 105px;
+    padding-left: 170px;
     transform: translateX(65%);
     }
     .qoutes1 img{
